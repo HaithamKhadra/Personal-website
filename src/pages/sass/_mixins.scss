@@ -1,0 +1,18 @@
+// 380px, 576px, 768px, 992px, 1200px, 1400px, 1920px, 2560px, 3072px
+$breakpoints-up: (
+  "xs": "23.75em",
+  "sm": "36em",
+  "md": "48em",
+  "lg": "62em",
+  "xl": "75em",
+  "xxl": "87.5em",
+  "fullHD": "120em",
+  "macPro13": "160em",
+  "macPro16": "192em",
+);
+
+@mixin media-breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}

@@ -1,0 +1,170 @@
+.about {
+  padding-left: 1rem; // utility
+  margin-top: 2rem; // utility
+
+  &__title {
+    font-size: $font-s1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__article {
+    font-weight: 300;
+  }
+
+  &__paragraph {
+    text-align: justify;
+    word-spacing: 0rem;
+    font-size: $font-xs;
+    line-height: 2rem;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__profile-svg {
+    // margin-top: 3rem;
+    // width: 100%;
+    // height: 100%;
+
+    svg {
+      // width: 232px;
+      // height: 136px;
+      display: none;
+      // margin: auto;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    &__paragraph {
+      text-align: left;
+      word-spacing: 0.5rem;
+      font-size: $font-xs + 0.125rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 2rem;
+    margin-top: 4rem;
+
+    &__title {
+      font-size: $font-s2;
+    }
+
+    &__paragraph {
+      font-size: $font-s1;
+    }
+
+    &__profile-svg {
+      margin-top: 4rem;
+      width: 100%;
+      height: 100%;
+
+      svg {
+        width: 232px * 1.5;
+        height: 136px * 1.5;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 5rem;
+
+    &__paragraph {
+      line-height: 2.5rem;
+    }
+
+    &__profile-svg {
+      margin-top: 5rem;
+      svg {
+        width: 232px * 1.75;
+        height: 136px * 1.75;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 8rem;
+    margin-top: 2rem;
+    display: flex;
+    gap: 5rem;
+
+    &__article {
+      // margin-top: 1rem;
+      font-weight: 300;
+      flex: 1;
+    }
+
+    &__paragraph {
+      text-align: left;
+      line-height: 2rem;
+    }
+
+    &__profile-svg {
+      flex: 0;
+      margin-top: 2rem;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding: 0 0 0 2rem;
+    width: 75%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  @include media-breakpoint-up(fullHD) {
+    width: 70%;
+
+    &__paragraph {
+      line-height: 2.25rem;
+    }
+  }
+
+  @include media-breakpoint-up(macPro13) {
+    gap: 7rem;
+    padding: 0 0 0 4rem;
+
+    &__title {
+      font-size: $font-lg;
+    }
+
+    &__paragraph {
+      text-align: left;
+      // word-spacing: 0rem;
+      font-size: $font-md;
+      line-height: 3.5rem;
+    }
+
+    &__profile-svg {
+      // margin-top: 3rem;
+
+      svg {
+        width: 232px * 2.25;
+        height: 136px * 2.25;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(macPro16) {
+    gap: 12rem;
+    &__title {
+      font-size: $font-xl - 0.5rem;
+    }
+
+    &__paragraph {
+      font-size: $font-lg;
+      line-height: 5rem;
+    }
+
+    &__profile-svg {
+      svg {
+        width: 232px * 3.5;
+        height: 136px * 3.5;
+      }
+    }
+  }
+}

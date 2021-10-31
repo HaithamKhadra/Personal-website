@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.225rem;
+  line-height: 1.3;
+  background-color: #040406;
+  color: #fff;
+}
+
+.main {
+  padding: 1.25rem 1.75rem 1.5625rem 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+p,
+p::after,
+p::before {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: #fff;
+}
+
+.navbar {
+  height: 100%;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__list-items {
+  font-size: 0.875rem;
+}
+
+.navbar__list-items:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.navbar__links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero__coding-svg {
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__coding-svg svg {
+  width: 232px;
+  height: 136px;
+}
+
+.hero__text-wrapper {
+  margin-top: 2.5rem;
+}
+
+.hero__text {
+  color: #fff;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.hero__my-name {
+  color: #43ef00;
+}
+
+.hero__call-to-action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.hero__hire-me, .hero__resume {
+  width: 152px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #43ef00;
+  border: 3px solid #43ef00;
+  font-size: 1.225rem;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+
+.hero__hire-me:hover, .hero__resume:hover {
+  background-color: #43ef00;
+  border: transparent;
+  color: #040406;
+}
+
+.p {
+  background-color: aqua;
+}
+
+.c {
+  background-color: yellow;
+}
+
+.d {
+  background-color: red;
+}

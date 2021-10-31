@@ -1,0 +1,97 @@
+.navbar {
+  height: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-items {
+    background-color: $grey-white;
+    padding: 0.125rem;
+    font-family: monospace;
+    font-weight: 300;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__links {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  @include media-breakpoint-up(xs) {
+    &__list-items {
+      font-size: $font-s1;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__list {
+      flex-direction: row;
+    }
+
+    &__list-items {
+      background-color: transparent;
+      padding: 0;
+      // font-size: $font-s1;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__list {
+      padding: 0 3rem;
+    }
+
+    // &__list-items {
+    //   font-size: 1.5rem;
+    // }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__list {
+      padding: 0 6rem;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    &__list {
+      padding: 0;
+      margin: auto;
+      width: 75%;
+    }
+  }
+
+  @include media-breakpoint-up(fullHD) {
+    &__list {
+      padding: 0;
+      margin: auto;
+      width: 70%;
+    }
+
+    &__list-items {
+      font-size: $font-md;
+    }
+  }
+
+  @include media-breakpoint-up(macPro13) {
+    &__list-items {
+      font-size: $font-lg;
+    }
+  }
+}

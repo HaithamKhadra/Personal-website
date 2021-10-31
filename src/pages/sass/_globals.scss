@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;600;700&display=swap");
+// @import "sass:math";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: $font-xs;
+  font-weight: 500;
+  line-height: 1.3;
+  background-color: $moonLight;
+  color: $white;
+}
+
+.main {
+  padding: 1.25rem 1.75rem 1.5625rem 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+p,
+p::after,
+p::before {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"] {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+}
+
+button,
+a {
+  &:focus-visible {
+    outline: $white;
+  }
+}
+
+*::selection {
+  background-color: $neonGreen;
+  color: $moonLight;
+}
+
+.go-back {
+  margin-top: 2rem;
+
+  &__link {
+    font-size: $font-s2;
+    color: $white;
+    font-weight: inherit;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: 5rem;
+    &__link {
+      font-size: $font-md;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 3rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 3.5rem;
+    padding: 0 6rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin-top: 5rem;
+    padding-left: (100% - 75%) * 0.5;
+  }
+
+  @include media-breakpoint-up(fullHD) {
+    padding-left: (100% - 70%) * 0.5;
+  }
+  @include media-breakpoint-up(macPro13) {
+    margin-top: 10rem;
+
+    &__link {
+      font-size: $font-xl;
+    }
+  }
+  @include media-breakpoint-up(macPro16) {
+    margin-top: 15rem;
+  }
+}
+
+// h2 {
+//   font-size: 2.325rem;
+//   color: #CC141C;
+
+//   &::before {
+//     content: '';
+//     display: inline-block;
+//     width: 28px;
+//     height: 5px;
+//     position: relative;
+//     bottom: 10px;
+//     background-color: #302419;
+//     z-index: -1;
+//   }
+// }
+
+// .px-mobile {
+//   padding: 1.5rem 1.875rem;
+// }
+
+// // visibility
+// .hide-for-mobile {
+//   // hide for medium and down
+//   @include breakpoint-down(small) {
+//     display: none;
+//   }
+//   // @include breakpoint-down(xsmall) {
+//   //   display: none;
+//   // }
+// }
+
+// .hide-for-desktop {
+//   @include breakpoint-up(medium) {
+//     display: none;
+//   }
+// }
