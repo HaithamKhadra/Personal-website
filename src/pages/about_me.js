@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-// import { Link } from "gatsby";
 import ProfileSvg from "../svg/ProfileSvg";
 import GoBack from "../components/GoBack";
 import SEO from "../components/SEO";
@@ -12,16 +11,11 @@ const about_me = () => {
 
   return (
     <Layout>
-      {/* <h1 className="go-back">
-        <Link className="go-back__link" to="/">
-          {greaterThan} Home_Page
-        </Link>
-      </h1> */}
       <SEO title="About" description="About haitham khadra" />
       <GoBack />
       <section className="about">
         <article className="about__article">
-          <h2 className="about__title">About_Me</h2>
+          <h2 className="about__title">About_Me section</h2>
           <p className="about__paragraph">I am a self-taught Programmer</p>
           <p className="about__paragraph">
             Passionate, motivated programmer, who's always looking for the next
