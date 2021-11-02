@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import "./index.scss";
+// import "./index.scss";
 import Coding from "../svg/Coding";
 import SEO from "../components/SEO";
 
