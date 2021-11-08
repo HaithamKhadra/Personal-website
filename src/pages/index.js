@@ -14,12 +14,12 @@ const IndexPage = () => {
       <section className="hero">
         <Coding />
         <div className="hero__text-wrapper">
-          <p className="hero__text">{greaterThan} Hello world!</p>
-          <p className="hero__text">
+          <h1 className="hero__text">{greaterThan} Hello world!</h1>
+          <h2 className="hero__text">
             {greaterThan} I am
             <span className="hero__my-name"> "Haitham Khadra"</span>
-          </p>
-          <p className="hero__text">{greaterThan} Front-End Developer</p>
+          </h2>
+          <h3 className="hero__text">{greaterThan} Front-End Developer</h3>
           <div className="hero__call-to-action">
             <button className="hero__hire-me">hire me</button>
             <button className="hero__resume">resume</button>
