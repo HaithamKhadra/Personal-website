@@ -1,0 +1,68 @@
+.error {
+  padding-left: 1rem; // utility
+  margin-top: 2rem; // utility
+
+  &__heading {
+    color: hsl(0, 100%, 50%);
+  }
+
+  &__text {
+    margin-top: 2rem;
+    color: hsl(0, 100%, 50%);
+    line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 2rem; // utility
+    margin-top: 4rem; // utility //change to 3rem
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 5rem; // utility
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 8rem; // utility
+    // margin-top: 4rem; // utility //change to 3rem
+    margin-top: 4rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    // padding: 0 8rem; // utility
+    // margin-top: 4rem; // utility //change to 3rem
+    padding: 0 0 0 2rem;
+    width: 75%;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  @include media-breakpoint-up(fullHD) {
+    width: 70%;
+
+    &__heading {
+      font-size: $font-lg;
+    }
+
+    &__text {
+      font-size: $font-s2;
+    }
+  }
+
+  @include media-breakpoint-up(macPro13) {
+    padding: 0 0 0 4rem;
+    margin-top: 4rem;
+  }
+
+  @include media-breakpoint-up(macPro16) {
+    padding: 0 0 0 4rem;
+    margin-top: 8rem;
+    &__heading {
+      font-size: $font-xl;
+    }
+
+    &__text {
+      font-size: $font-md;
+    }
+  }
+}

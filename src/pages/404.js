@@ -1,5 +1,25 @@
-import React from "react"
+import React from "react";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+import GoBack from "../components/GoBack";
 
-export default function error() {
-  return <h1>Error page 404</h1>
-}
+const error = () => {
+  return (
+    <Layout>
+      <SEO title="Error 404: Not Found!" description="404 not found" />
+      <GoBack />
+      <section className="error">
+        <h2 className="error__heading">Error 404: Page Not Found</h2>
+        <p className="error__text">
+          The Page you are trying to reach does not exist!
+        </p>
+        <p className="error__text">
+          If this error persist! Kindly refer to Navigation bar while surfing
+          this website
+        </p>
+      </section>
+    </Layout>
+  );
+};
+
+export default error;
