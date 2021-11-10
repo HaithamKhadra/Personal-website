@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 // import "./index.scss";
 import Coding from "../svg/Coding";
 import SEO from "../components/SEO";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
   const greaterThan = React.createElement("span", {
@@ -21,8 +22,20 @@ const IndexPage = () => {
           </h2>
           <h3 className="hero__text">{greaterThan} Front-End Developer</h3>
           <div className="hero__call-to-action">
-            <button className="hero__hire-me">hire me</button>
-            <button className="hero__resume">resume</button>
+            {/* <a rel="noreferrer" href={project.ghLink} className="hero__hire-me">
+              hire me
+            </a> */}
+            <Link className="hero__hire-me" to="contact_me">
+              hire me
+            </Link>
+            <a
+              rel="noreferrer"
+              href="https://www.google.com"
+              target="_blank"
+              className="hero__resume"
+            >
+              resume
+            </a>
           </div>
         </div>
       </section>
