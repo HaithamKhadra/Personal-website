@@ -25,17 +25,21 @@ const IndexPage = () => {
             {/* <a rel="noreferrer" href={project.ghLink} className="hero__hire-me">
               hire me
             </a> */}
-            <Link className="hero__hire-me" to="contact_me">
+            {/* <button className="hero__hire-me">
+            </button> */}
+            <Link className="hero__link" to="contact_me">
               hire me
             </Link>
             <a
+              className="hero__link"
               rel="noreferrer"
               href="https://www.google.com"
               target="_blank"
-              className="hero__resume"
             >
               resume
             </a>
+            {/* <button className="hero__resume">
+            </button> */}
           </div>
         </div>
       </section>
