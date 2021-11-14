@@ -13,9 +13,9 @@ const about_me = () => {
     <Layout>
       <SEO title="About" description="About haitham khadra" />
       <GoBack />
-      <section className="about">
+      <section className="about pdmg">
         <article className="about__article">
-          <h2 className="about__title">About_Me section</h2>
+          <h2 className="about__title">About_Me</h2>
           <p className="about__paragraph">I am a self-taught Programmer</p>
           <p className="about__paragraph">
             Passionate, motivated programmer, who's always looking for the next

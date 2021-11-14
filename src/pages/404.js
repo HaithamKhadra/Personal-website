@@ -8,7 +8,7 @@ const error = () => {
     <Layout>
       <SEO title="Error 404: Not Found!" description="404 not found" />
       <GoBack />
-      <section className="error">
+      <section className="error pdmg">
         <h2 className="error__heading">Error 404: Page Not Found</h2>
         <p className="error__text">
           The Page you are trying to reach does not exist!

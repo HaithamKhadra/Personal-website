@@ -11,7 +11,7 @@ const portfolio = ({ data }) => {
   return (
     <Layout>
       <GoBack />
-      <section className="projects">
+      <section className="projects pdmg">
         <h2 className="projects__heading">My Portfolio</h2>
         <div className="projects__container">
           {projects.map((project, key) => {

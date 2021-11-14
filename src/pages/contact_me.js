@@ -14,7 +14,7 @@ const contact_me = () => {
   return (
     <Layout>
       <GoBack />
-      <div className="container">
+      <div className="container pdmg">
         <section className="contact">
           <h2 className="contact__heading">Get In Touch:</h2>
           <form className="contact__form" method="post">

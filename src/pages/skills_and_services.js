@@ -6,7 +6,7 @@ const skills_and_services = () => {
   return (
     <Layout>
       <GoBack />
-      <section className="services">
+      <section className="services pdmg">
         <h2 className="services__heading">Services</h2>
         <div className="services__flex-container">
           <article className="services__cat">
@@ -32,7 +32,7 @@ const skills_and_services = () => {
           </article>
         </div>
       </section>
-      <section className="skills">
+      <section className="skills pdmg">
         <h2 className="skills__heading">Skills</h2>
         <div className="skills__flex-container">
           <div className="skills__cat">
