@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import Seo from "../components/Seo";
 import GoBack from "../components/GoBack";
 
 const error = () => {
   return (
     <Layout>
-      <SEO title="Error 404: Not Found!" description="404 not found" />
+      <Seo title="Error 404: Not Found!" description="404 not found" />
       <GoBack />
       <section className="error pdmg">
         <h2 className="error__heading">Error 404: Page Not Found</h2>

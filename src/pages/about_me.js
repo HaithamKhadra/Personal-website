@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import ProfileSvg from "../svg/ProfileSvg";
 import GoBack from "../components/GoBack";
-import SEO from "../components/SEO";
+import Seo from "../components/Seo";
 
 const about_me = () => {
   // const greaterThan = React.createElement("span", {
@@ -11,7 +11,7 @@ const about_me = () => {
 
   return (
     <Layout>
-      <SEO title="About" description="About haitham khadra" />
+      <Seo title="About" description="About haitham khadra" />
       <GoBack />
       <section className="about pdmg">
         <article className="about__article">

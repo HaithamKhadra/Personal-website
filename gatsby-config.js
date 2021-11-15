@@ -36,16 +36,17 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       // {
-    //       //   family: `IBM Plex Mono`,
-    //       //   variants: [`300`, `500`, `600`, `700`],
-    //       // },
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `My personal and portfolio website`,
+        short_name: `portfolio website`,
+        start_url: `/`,
+        background_color: `#ffffff00`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
   ],
 };

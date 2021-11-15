@@ -60,16 +60,40 @@ const contact_me = () => {
           <div className="accounts__flex">
             <ul className="accounts__list">
               <li className="accounts__list-item">
-                <FontAwesomeIcon icon={faGithub} />
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/HaithamKhadra"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </li>
               <li className="accounts__list-item">
-                <FontAwesomeIcon icon={faTwitter} />
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://twitter.com/haitham__k"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
               </li>
               <li className="accounts__list-item">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://linkedin.com/in/haitham-khadra"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
               </li>
               <li className="accounts__list-item">
-                <FontAwesomeIcon icon={faAt} />
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="mailto:haithamkhadra@hotmail.com"
+                >
+                  <FontAwesomeIcon icon={faAt} />
+                </a>
               </li>
             </ul>
             <Mail />

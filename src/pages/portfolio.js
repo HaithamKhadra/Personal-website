@@ -2,7 +2,8 @@ import React from "react";
 import Layout from "../components/Layout";
 import GoBack from "../components/GoBack";
 import { graphql } from "gatsby";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 const portfolio = ({ data }) => {
   const {
     allContentfulProject: { nodes: projects },
@@ -18,7 +19,7 @@ const portfolio = ({ data }) => {
             return (
               <div key={key} className="projects__card">
                 <div className="projects__img-wrapper">
-                  <img src={project.image.fluid.src} alt="screenshot" />
+                  <img src={project.image.file.url} alt="screenshot " />
                 </div>
                 <div className="projects__details">
                   <h3 className="projects__project-title">{project.title}</h3>
@@ -41,6 +42,10 @@ const portfolio = ({ data }) => {
                       target="_blank"
                       className="projects__link-code"
                     >
+                      <FontAwesomeIcon
+                        className="projects__icon"
+                        icon={faCode}
+                      />
                       Code
                     </a>
                     <a
@@ -49,6 +54,10 @@ const portfolio = ({ data }) => {
                       target="_blank"
                       className="projects__link-live"
                     >
+                      <FontAwesomeIcon
+                        className="projects__icon"
+                        icon={faExternalLinkAlt}
+                      />
                       Live
                     </a>
                   </div>
@@ -72,13 +81,13 @@ export const query = graphql`
           description
         }
         techStach
-        image {
-          fluid {
-            ...GatsbyContentfulFluid
-          }
-        }
         ghLink
         liveUrl
+        image {
+          file {
+            url
+          }
+        }
       }
     }
   }

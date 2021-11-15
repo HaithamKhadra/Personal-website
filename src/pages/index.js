@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 // import "./index.scss";
 import Coding from "../svg/Coding";
-import SEO from "../components/SEO";
+import Seo from "../components/Seo";
 import { Link } from "gatsby";
 
 const IndexPage = () => {
@@ -11,7 +11,7 @@ const IndexPage = () => {
   });
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <section className="hero">
         <Coding />
         <div className="hero__text-wrapper">

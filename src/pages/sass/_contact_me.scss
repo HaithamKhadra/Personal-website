@@ -179,6 +179,7 @@
 }
 
 .accounts {
+  padding-top: 4rem;
   &__list {
     list-style: none;
     margin-top: 1rem;
@@ -188,14 +189,18 @@
 
   &__list-item {
     font-size: 2.5rem;
-    color: $neonGreen;
-    cursor: pointer;
-    transform: scale(1);
-    transition: all 400ms ease;
 
-    &:hover {
-      color: $cyan;
-      transform: scale(1.25);
+    a {
+      display: block;
+      color: $neonGreen;
+      cursor: pointer;
+      transform: scale(1);
+      transition: all 400ms ease;
+
+      &:hover {
+        color: $cyan;
+        transform: scale(1.25);
+      }
     }
   }
 
@@ -236,6 +241,7 @@
   }
 
   @include media-breakpoint-up(xl) {
+    padding-top: 0rem;
     flex: 1;
   }
 
