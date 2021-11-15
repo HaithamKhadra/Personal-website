@@ -9,9 +9,63 @@ const IndexPage = () => {
   const greaterThan = React.createElement("span", {
     dangerouslySetInnerHTML: { __html: "&gt;" },
   });
+
+  const schema = [
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      name: "Haitham Khadra",
+      email: "haithamkhadra@hotmail.com",
+      url: "https://haitham-khadra.netlify.app/about",
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      name: "Haitham Khadra",
+      email: "haithamkhadra@hotmail.com",
+      url: "https://haitham-khadra.netlify.app/skills-services",
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      name: "Haitham Khadra",
+      email: "haithamkhadra@hotmail.com",
+      url: "https://haitham-khadra.netlify.app/portfolio",
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      name: "Haitham Khadra",
+      email: "haithamkhadra@hotmail.com",
+      url: "https://haitham-khadra.netlify.app/contact",
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      name: '"Haitham Khadra"',
+      email: "haithamkhadra@hotmail.com",
+      url: "https://haitham-khadra.netlify.app/contact",
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      name: "Haitham Khadra",
+      email: "haithamkhadra@hotmail.com",
+      url: "https://www.google.com/",
+    },
+  ];
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo
+        title="Home"
+        description="This is Haitham khadra's website,
+        I am a self-taught programmer with a Bachelor degree in Biology.
+        I created this website to showcase my ability in making website dynamic,
+        responsive and user experience friendly. I have experience in coding
+        personal and freelance projects using JavaScript, HTML, CSS,
+        React, Gatsby, SQL, Python, Django and Git."
+        schemaMarkup={schema}
+      />
       <section className="hero">
         <Coding />
         <div className="hero__text-wrapper">

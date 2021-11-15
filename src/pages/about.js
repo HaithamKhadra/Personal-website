@@ -7,7 +7,10 @@ import Seo from "../components/Seo";
 const about_me = () => {
   return (
     <Layout>
-      <Seo title="About" description="About haitham khadra" />
+      <Seo
+        title="About"
+        description="About me (haitham khadra, the owner of this website). In this page I introduce myself to the visitors of my website."
+      />
       <GoBack />
       <section className="about pdmg">
         <article className="about__article">

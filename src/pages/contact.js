@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import GoBack from "../components/GoBack";
+import Seo from "../components/Seo";
 import Mail from "../svg/Mail";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,6 +14,11 @@ import { faAt } from "@fortawesome/free-solid-svg-icons";
 const contact_me = () => {
   return (
     <Layout>
+      <Seo
+        title="Contact Me"
+        description="If you are looking for a responsive, user-friendly website for your organization, business or product, feel free to contact me."
+      />
+
       <GoBack />
       <div className="container pdmg">
         <section className="contact">

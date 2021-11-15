@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import GoBack from "../components/GoBack";
+import Seo from "../components/Seo";
 import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,10 @@ const portfolio = ({ data }) => {
 
   return (
     <Layout>
+      <Seo
+        title="Portfolio"
+        description="my portfolio page to showcase the projects that I finished and those that I am still working on"
+      />
       <GoBack />
       <section className="projects pdmg">
         <h2 className="projects__heading">My Portfolio</h2>

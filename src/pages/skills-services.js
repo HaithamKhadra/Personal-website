@@ -1,10 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
 import GoBack from "../components/GoBack";
+import Seo from "../components/Seo";
 
 const skills_and_services = () => {
   return (
     <Layout>
+      <Seo
+        title="Skills and Services"
+        description="Services and skills that I can offer, at the time of viewing this page."
+      />
       <GoBack />
       <section className="services pdmg">
         <h2 className="services__heading">Services</h2>

@@ -18,7 +18,7 @@ const query = graphql`
   }
 `;
 
-const Seo = ({ title, description }) => {
+const Seo = ({ title, description, schemaMarkup }) => {
   const { site } = useStaticQuery(query);
   const metaDesc = description || site.siteMetadata.description;
 
@@ -26,7 +26,13 @@ const Seo = ({ title, description }) => {
     <Helmet
       title={`${title} | ${site.siteMetadata.title}`}
       meta={[{ name: "description", content: metaDesc }]}
-    ></Helmet>
+    >
+      {schemaMarkup && (
+        <script type="application/ld+json">
+          {JSON.stringify(schemaMarkup)}
+        </script>
+      )}
+    </Helmet>
   );
 };
 
