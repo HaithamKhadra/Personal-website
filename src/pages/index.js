@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 // import "./index.scss";
 import Coding from "../svg/Coding";
 import { Link } from "gatsby";
-// import Seo from "../components/Seo";
+import Seo from "../components/Seo";
 
 const IndexPage = () => {
   const greaterThan = React.createElement("span", {
@@ -11,7 +11,7 @@ const IndexPage = () => {
   });
   return (
     <Layout>
-      {/* <Seo title="Home" /> */}
+      <Seo title="Home" />
       <section className="hero">
         <Coding />
         <div className="hero__text-wrapper">
