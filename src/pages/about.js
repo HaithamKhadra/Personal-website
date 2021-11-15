@@ -2,16 +2,12 @@ import React from "react";
 import Layout from "../components/Layout";
 import ProfileSvg from "../svg/ProfileSvg";
 import GoBack from "../components/GoBack";
-import Seo from "../components/Seo";
+// import Seo from "../components/Seo";
 
 const about_me = () => {
-  // const greaterThan = React.createElement("span", {
-  //   dangerouslySetInnerHTML: { __html: "&gt;" },
-  // });
-
   return (
     <Layout>
-      <Seo title="About" description="About haitham khadra" />
+      {/* <Seo title="About" description="About haitham khadra" /> */}
       <GoBack />
       <section className="about pdmg">
         <article className="about__article">

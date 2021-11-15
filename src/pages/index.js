@@ -2,8 +2,8 @@ import * as React from "react";
 import Layout from "../components/Layout";
 // import "./index.scss";
 import Coding from "../svg/Coding";
-import Seo from "../components/Seo";
 import { Link } from "gatsby";
+// import Seo from "../components/Seo";
 
 const IndexPage = () => {
   const greaterThan = React.createElement("span", {
@@ -11,7 +11,7 @@ const IndexPage = () => {
   });
   return (
     <Layout>
-      <Seo title="Home" />
+      {/* <Seo title="Home" /> */}
       <section className="hero">
         <Coding />
         <div className="hero__text-wrapper">
@@ -27,7 +27,7 @@ const IndexPage = () => {
             </a> */}
             {/* <button className="hero__hire-me">
             </button> */}
-            <Link className="hero__link" to="contact_me">
+            <Link className="hero__link" to="/contact">
               hire me
             </Link>
             <a
