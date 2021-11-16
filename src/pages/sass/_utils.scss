@@ -3,13 +3,11 @@
 }
 
 .pdmg {
-  // about, contact, skills, services, portfolio, error
   padding-left: 1rem;
   margin-top: 2rem;
 
   @include media-breakpoint-up(md) {
     padding: 0 2rem;
-    // padding-left: 2rem; // for projects
     margin-top: 4rem;
   }
 
@@ -20,19 +18,6 @@
   @include media-breakpoint-up(xl) {
     padding: 0 8rem;
     margin-top: 2rem;
-
-    // contact
-    // padding: 0 0 0 8rem;
-    // margin-top: 2rem;
-
-    // //skills
-    // padding: 0 8rem;
-    // margin-top: 4rem;
-
-    // //services and portfolio
-    // padding: 0 6rem 0 8rem;
-    // margin-top: 2rem;
-    // margin-bottom: 0;
   }
 
   @include media-breakpoint-up(xxl) {
@@ -48,19 +33,10 @@
 
   @include media-breakpoint-up(macPro13) {
     padding: 0 0 0 4rem;
-
-    // // contact
-    // padding: 0;
-
-    // //error skills
-    // margin-top: 4rem;
   }
 
   @include media-breakpoint-up(macPro16) {
-    //error skills
     margin-top: 8rem;
-
-    //
   }
 }
 

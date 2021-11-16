@@ -1,7 +1,4 @@
 .projects {
-  // padding-left: 1rem; // utility
-  // margin-top: 2rem; // utility
-
   &__heading {
     text-transform: uppercase;
     font-size: $font-s2;
@@ -15,7 +12,6 @@
   &__card {
     margin-top: 3rem;
     width: 100%;
-    // outline: 1px solid $white;
   }
 
   &__img-wrapper {
@@ -83,14 +79,10 @@
   }
 
   @include media-breakpoint-up(md) {
-    // padding-left: 2rem; // utility
-    // margin-top: 4rem; // utility
-
     &__container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
       gap: 2rem;
-      // margin-top: 2rem;
     }
 
     &__card {
@@ -117,15 +109,7 @@
     }
   }
 
-  // @include media-breakpoint-up(lg) {
-  //   padding: 0 5rem;
-  // }
-
   @include media-breakpoint-up(xl) {
-    // padding: 0 6rem 0 8rem; // utility
-    // // margin-top: 4rem; // utility //change to 3rem
-    // margin-top: 2rem;
-
     &__container {
       grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
       margin-top: 2rem;
@@ -141,11 +125,6 @@
   }
 
   @include media-breakpoint-up(xxl) {
-    // width: 75%;
-    // padding: 0 0 0 2rem;
-    // margin: auto;
-    // margin-top: 2rem;
-
     &__container {
       row-gap: 4rem;
       column-gap: 3rem;
@@ -153,8 +132,6 @@
   }
 
   @include media-breakpoint-up(fullHD) {
-    // width: 70%;
-
     &__container {
       row-gap: 6rem;
       column-gap: 4rem;
@@ -162,8 +139,6 @@
   }
 
   @include media-breakpoint-up(macPro13) {
-    // padding: 0 0 0 4rem;
-
     &__container {
       margin-top: 4rem;
     }

@@ -58,10 +58,9 @@ const IndexPage = () => {
     <Layout>
       <Seo
         title="Home"
-        description="This is Haitham khadra's website,
+        description="My name is Haitham khadra,
         I am a self-taught programmer with a Bachelor degree in Biology.
-        I created this website to showcase my ability in making website dynamic,
-        responsive and user experience friendly. I have experience in coding
+        I have experience in coding
         personal and freelance projects using JavaScript, HTML, CSS,
         React, Gatsby, SQL, Python, Django and Git."
         schemaMarkup={schema}

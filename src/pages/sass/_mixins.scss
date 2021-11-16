@@ -1,14 +1,22 @@
-// 380px, 576px, 768px, 992px, 1200px, 1400px, 1920px, 2560px, 3072px
 $breakpoints-up: (
+  // 380px
   "xs": "23.75em",
+  // 576px
   "sm": "36em",
+  // 768px
   "md": "48em",
+  // 992px
   "lg": "62em",
+  // 1200px
   "xl": "75em",
+  // 1400px
   "xxl": "87.5em",
+  // 1920px
   "fullHD": "120em",
+  // 2560px
   "macPro13": "160em",
-  "macPro16": "192em",
+  // 3072px
+  "macPro16": "192em"
 );
 
 @mixin media-breakpoint-up($size) {
