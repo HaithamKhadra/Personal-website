@@ -24,6 +24,9 @@ const Seo = ({ title, description, schemaMarkup }) => {
 
   return (
     <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
       title={`${title} | ${site.siteMetadata.title}`}
       meta={[{ name: "description", content: metaDesc }]}
     >

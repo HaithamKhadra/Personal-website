@@ -14,6 +14,9 @@
     word-spacing: 0rem;
     font-size: $font-xs;
     line-height: 2rem;
+    a {
+      color: $neonGreen;
+    }
 
     &:not(:first-child) {
       margin-top: 1rem;

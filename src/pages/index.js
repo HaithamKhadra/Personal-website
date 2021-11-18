@@ -1,6 +1,5 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-// import "./index.scss";
 import Coding from "../svg/Coding";
 import { Link } from "gatsby";
 import Seo from "../components/Seo";
@@ -13,46 +12,46 @@ const IndexPage = () => {
   const schema = [
     {
       "@context": "http://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "Portfolio",
       name: "Haitham Khadra",
       email: "haithamkhadra@hotmail.com",
-      url: "https://haitham-khadra.netlify.app/about",
+      url: "https://haitham-khadra.netlify.app/",
     },
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      name: "Haitham Khadra",
-      email: "haithamkhadra@hotmail.com",
-      url: "https://haitham-khadra.netlify.app/skills-services",
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      name: "Haitham Khadra",
-      email: "haithamkhadra@hotmail.com",
-      url: "https://haitham-khadra.netlify.app/portfolio",
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      name: "Haitham Khadra",
-      email: "haithamkhadra@hotmail.com",
-      url: "https://haitham-khadra.netlify.app/contact",
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      name: '"Haitham Khadra"',
-      email: "haithamkhadra@hotmail.com",
-      url: "https://haitham-khadra.netlify.app/contact",
-    },
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      name: "Haitham Khadra",
-      email: "haithamkhadra@hotmail.com",
-      url: "https://www.google.com/",
-    },
+    // {
+    //   "@context": "http://schema.org",
+    //   "@type": "LocalBusiness",
+    //   name: "Haitham Khadra",
+    //   email: "haithamkhadra@hotmail.com",
+    //   url: "https://haitham-khadra.netlify.app/skills-services",
+    // },
+    // {
+    //   "@context": "http://schema.org",
+    //   "@type": "LocalBusiness",
+    //   name: "Haitham Khadra",
+    //   email: "haithamkhadra@hotmail.com",
+    //   url: "https://haitham-khadra.netlify.app/portfolio",
+    // },
+    // {
+    //   "@context": "http://schema.org",
+    //   "@type": "LocalBusiness",
+    //   name: "Haitham Khadra",
+    //   email: "haithamkhadra@hotmail.com",
+    //   url: "https://haitham-khadra.netlify.app/contact",
+    // },
+    // {
+    //   "@context": "http://schema.org",
+    //   "@type": "LocalBusiness",
+    //   name: '"Haitham Khadra"',
+    //   email: "haithamkhadra@hotmail.com",
+    //   url: "https://haitham-khadra.netlify.app/contact",
+    // },
+    // {
+    //   "@context": "http://schema.org",
+    //   "@type": "LocalBusiness",
+    //   name: "Haitham Khadra",
+    //   email: "haithamkhadra@hotmail.com",
+    //   url: "https://www.google.com/",
+    // },
   ];
   return (
     <Layout>
@@ -75,11 +74,6 @@ const IndexPage = () => {
           </h2>
           <h3 className="hero__text">{greaterThan} Front-End Developer</h3>
           <div className="hero__call-to-action">
-            {/* <a rel="noreferrer" href={project.ghLink} className="hero__hire-me">
-              hire me
-            </a> */}
-            {/* <button className="hero__hire-me">
-            </button> */}
             <Link className="hero__link" to="/contact">
               hire me
             </Link>
@@ -91,8 +85,6 @@ const IndexPage = () => {
             >
               resume
             </a>
-            {/* <button className="hero__resume">
-            </button> */}
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import ProfileSvg from "../svg/ProfileSvg";
 import GoBack from "../components/GoBack";
 import Seo from "../components/Seo";
+import { Link } from "gatsby";
 
 const about_me = () => {
   return (
@@ -26,7 +27,8 @@ const about_me = () => {
           </p>
           <p className="about__paragraph">
             If you are looking for a responsive, user-friendly website for your
-            organization, business or product, feel free to CONTACT_ME
+            organization, business or product, feel free to{" "}
+            <Link to="/contact">contact me</Link>
           </p>
         </article>
         <ProfileSvg />

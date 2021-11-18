@@ -22,6 +22,8 @@
   }
 
   &__links {
+    display: block;
+    width: 100%;
     text-decoration: none;
     text-transform: uppercase;
     color: $white;

@@ -17,22 +17,17 @@ const skills_and_services = () => {
           <article className="services__cat">
             <h3 className="services__cat-heading">Front-End Development</h3>
             <p className="services__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quam
-              dolor assumenda nihil, aperiam nostrum!
+              Using HTML, CSS, and JavaScript, with the help of React, Gatsby
+              and APIs. I am able to bring any Design concept to life, while
+              also following SEO best practices.
             </p>
           </article>
           <article className="services__cat">
             <h3 className="services__cat-heading">Back-End Development</h3>
             <p className="services__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quam
-              dolor assumenda nihil, aperiam nostrum!
-            </p>
-          </article>
-          <article className="services__cat">
-            <h3 className="services__cat-heading">SEO Optimization</h3>
-            <p className="services__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quam
-              dolor assumenda nihil, aperiam nostrum!
+              Utilizing good knowledge in Python and SQL, I can find digital
+              solutions for your business needs, with the help of Django
+              Framework.
             </p>
           </article>
         </div>
