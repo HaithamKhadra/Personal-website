@@ -1,54 +1,56 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+## General info
 
-## 🚀 Quick start
+This is my personal website, I have built it to showcase my tech skills and finished work, and future porjects that I'm working on.
 
-1.  **Create a Gatsby site.**
+- ### Website content:
+  - [Home/Welcome page](https://haitham-khadra.netlify.app)
+  - [About_Me page](https://haitham-khadra.netlify.app/about)
+  - [Skills && services page](https://haitham-khadra.netlify.app/skills-services)
+  - [Portfolio page](https://haitham-khadra.netlify.app/portfolio)
+  - [Contact_ME page](https://haitham-khadra.netlify.app/contact)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## My process
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Built with
 
-2.  **Start developing.**
+- **Semantic HTML5 markup**
+- **CSS** - **SASS(SCSS)** - _Flexbox_ - _CSS Grid_
+- **Javascript (ES6+)**
+- **[React](https://reactjs.org/)**
+- **[Gatsby](sbyjs.com/)**
 
-    Navigate into your new site’s directory and start it up.
+## Features
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- Mobile-first workflow
+- Responsive design (Mobile, tablets, large screens)
+- Single Page Application (SPA)
+- Contact Form
 
-3.  **Open the code and start customizing!**
+## Color Reference
 
-    Your site is now running at http://localhost:8000!
+| Color      | Hex                                                              |
+| ---------- | ---------------------------------------------------------------- |
+| MoonLight  | ![#050506](https://via.placeholder.com/25/050506?text=+) #050506 |
+| White      | ![#FFFFFF](https://via.placeholder.com/25/FFFFFF?text=+) #FFFFFF |
+| Neon Green | ![#4fff1f](https://via.placeholder.com/25/4fff1f?text=+) #4fff1f |
+| Cyan       | ![#00ffff](https://via.placeholder.com/25/00ffff?text=+) #00ffff |
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Useful resources
 
-4.  **Learn more**
+- [Gatsby's Documentation](https://www.gatsbyjs.com/docs)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Gatsby's Tutorials](https://www.gatsbyjs.com/tutorial)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Plugin Library](https://www.gatsbyjs.com/plugins)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [contentful's Documentation](https://www.contentful.com/developers/docs/)
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Recipe Site Tutorial by CodingAddict on Youtube](https://www.youtube.com/watch?v=JlxXHlygVLM)
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Links
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- Live Site URL: [My Personal Website ](https://haitham-khadra.netlify.app/)
 
-## 🚀 Quick start (Gatsby Cloud)
+## License
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+[MIT License](https://choosealicense.com/licenses/mit/)

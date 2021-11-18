@@ -23,14 +23,18 @@ const contact_me = () => {
       <div className="container pdmg">
         <section className="contact">
           <h2 className="contact__heading">Get In Touch:</h2>
-          <form className="contact__form" method="post">
+          <form
+            className="contact__form"
+            action="https://formspree.io/f/xoqygrlo"
+            method="POST"
+          >
             <div className="contact__form__group">
               <label htmlFor="inputEmail" className="contact__form__label">
                 Email
               </label>
               <input
                 type="text"
-                name="inputEmail"
+                name="_replyto"
                 id="inputEmail"
                 className="contact__form__input"
               />
@@ -41,7 +45,7 @@ const contact_me = () => {
               </label>
               <input
                 type="text"
-                name="inputSubject"
+                name="_subject"
                 id="inputSubject"
                 className="contact__form__input"
               />
@@ -52,7 +56,7 @@ const contact_me = () => {
               </label>
               <textarea
                 className="contact__form__textarea"
-                name="textarea"
+                name="message"
                 id="textarea"
               ></textarea>
             </div>
