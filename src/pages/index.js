@@ -3,11 +3,24 @@ import Layout from "../components/Layout";
 import Coding from "../svg/Coding";
 import { Link } from "gatsby";
 import Seo from "../components/Seo";
+import { graphql, useStaticQuery } from "gatsby";
 
 const IndexPage = () => {
   const greaterThan = React.createElement("span", {
     dangerouslySetInnerHTML: { __html: "&gt;" },
   });
+
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: { extension: { eq: "pdf" } }) {
+        edges {
+          node {
+            publicURL
+          }
+        }
+      }
+    }
+  `);
 
   const schema = [
     {
@@ -17,41 +30,6 @@ const IndexPage = () => {
       email: "haithamkhadra@hotmail.com",
       url: "https://haitham-khadra.netlify.app/",
     },
-    // {
-    //   "@context": "http://schema.org",
-    //   "@type": "LocalBusiness",
-    //   name: "Haitham Khadra",
-    //   email: "haithamkhadra@hotmail.com",
-    //   url: "https://haitham-khadra.netlify.app/skills-services",
-    // },
-    // {
-    //   "@context": "http://schema.org",
-    //   "@type": "LocalBusiness",
-    //   name: "Haitham Khadra",
-    //   email: "haithamkhadra@hotmail.com",
-    //   url: "https://haitham-khadra.netlify.app/portfolio",
-    // },
-    // {
-    //   "@context": "http://schema.org",
-    //   "@type": "LocalBusiness",
-    //   name: "Haitham Khadra",
-    //   email: "haithamkhadra@hotmail.com",
-    //   url: "https://haitham-khadra.netlify.app/contact",
-    // },
-    // {
-    //   "@context": "http://schema.org",
-    //   "@type": "LocalBusiness",
-    //   name: '"Haitham Khadra"',
-    //   email: "haithamkhadra@hotmail.com",
-    //   url: "https://haitham-khadra.netlify.app/contact",
-    // },
-    // {
-    //   "@context": "http://schema.org",
-    //   "@type": "LocalBusiness",
-    //   name: "Haitham Khadra",
-    //   email: "haithamkhadra@hotmail.com",
-    //   url: "https://www.google.com/",
-    // },
   ];
   return (
     <Layout>
@@ -80,7 +58,7 @@ const IndexPage = () => {
             <a
               className="hero__link"
               rel="noreferrer"
-              href="https://www.google.com"
+              href={data.allFile.edges[0].node.publicURL}
               target="_blank"
             >
               resume

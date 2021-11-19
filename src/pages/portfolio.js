@@ -5,6 +5,7 @@ import Seo from "../components/Seo";
 import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
+
 const portfolio = ({ data }) => {
   const {
     allContentfulProject: { nodes: projects },
