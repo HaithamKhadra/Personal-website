@@ -61,9 +61,8 @@
       text-transform: uppercase;
       color: $neonGreen;
       border: 2px solid $neonGreen;
-      transition: all 400ms ease;
       letter-spacing: 2px;
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 
@@ -78,6 +77,15 @@
 
     &__form {
       padding: 1rem 2rem 0;
+    }
+
+    &__btn {
+      transition: all 400ms ease;
+
+      &:hover {
+        color: $moonLight;
+        background-color: $neonGreen;
+      }
     }
   }
 
