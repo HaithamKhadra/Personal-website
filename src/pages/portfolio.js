@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
-
+import { motion } from "framer-motion";
 const portfolio = ({ data }) => {
   const {
     allContentfulProject: { nodes: projects },
@@ -23,7 +23,18 @@ const portfolio = ({ data }) => {
         <div className="projects__container">
           {projects.map((project, key) => {
             return (
-              <div key={key} className="projects__card">
+              <motion.div
+                key={key}
+                className="projects__card"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "Spring",
+                  stiffness: 25,
+                  duration: 0.5,
+                  delay: key * 0.5,
+                }}
+              >
                 <div className="projects__img-wrapper">
                   <img src={project.image.file.url} alt="screenshot " />
                 </div>
@@ -68,7 +79,7 @@ const portfolio = ({ data }) => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

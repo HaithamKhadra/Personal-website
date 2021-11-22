@@ -45,7 +45,7 @@ const IndexPage = () => {
       <section className="hero">
         <Coding />
         <div className="hero__text-wrapper">
-          <h1 className="hero__text">{greaterThan} Hello world!</h1>
+          <h1 className="hero__text">{greaterThan} Hello, world!</h1>
           <h2 className="hero__text">
             {greaterThan} I am
             <span className="hero__my-name"> "Haitham Khadra"</span>

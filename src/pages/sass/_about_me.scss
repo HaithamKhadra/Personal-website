@@ -16,6 +16,8 @@
     line-height: 2rem;
     a {
       color: $neonGreen;
+      text-decoration: underline;
+      font-weight: 600;
     }
 
     &:not(:first-child) {
