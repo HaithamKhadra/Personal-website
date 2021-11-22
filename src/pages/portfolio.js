@@ -6,6 +6,7 @@ import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+
 const portfolio = ({ data }) => {
   const {
     allContentfulProject: { nodes: projects },
