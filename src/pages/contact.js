@@ -11,20 +11,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { anime } from "../components/Animations";
 
 const contact_me = () => {
-  const anim = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "Spring",
-        stiffness: 25,
-        duration: 0.75,
-      },
-    },
-    hidden: { opacity: 0, y: 10 },
-  };
   return (
     <Layout>
       <Seo
@@ -33,7 +22,12 @@ const contact_me = () => {
       />
 
       <GoBack />
-      <div className="container pdmg">
+      <motion.div
+        className="container pdmg"
+        initial="hidden"
+        animate="visible"
+        variants={anime}
+      >
         <section className="contact">
           <h2 className="contact__heading">Get In Touch:</h2>
           <form
@@ -122,7 +116,7 @@ const contact_me = () => {
             <Mail />
           </div>
         </section>
-      </div>
+      </motion.div>
     </Layout>
   );
 };

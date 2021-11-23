@@ -6,6 +6,7 @@ import { graphql } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { anime } from "../components/Animations";
 
 const portfolio = ({ data }) => {
   const {
@@ -21,13 +22,9 @@ const portfolio = ({ data }) => {
       <GoBack />
       <motion.section
         className="projects pdmg"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          type: "Spring",
-          stiffness: 25,
-          duration: 0.75,
-        }}
+        initial="hidden"
+        animate="visible"
+        variants={anime}
       >
         <h2 className="projects__heading">My Portfolio</h2>
         <div className="projects__container">

@@ -3,20 +3,9 @@ import Layout from "../components/Layout";
 import GoBack from "../components/GoBack";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
+import { anime } from "../components/Animations";
 
 const skills_and_services = () => {
-  const anim = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "Spring",
-        stiffness: 25,
-        duration: 0.75,
-      },
-    },
-    hidden: { opacity: 0, y: 10 },
-  };
   return (
     <Layout>
       <Seo
@@ -28,7 +17,7 @@ const skills_and_services = () => {
         className="services pdmg"
         initial="hidden"
         animate="visible"
-        variants={anim}
+        variants={anime}
       >
         <h2 className="services__heading">Services</h2>
         <div className="services__flex-container">
@@ -54,7 +43,7 @@ const skills_and_services = () => {
         className="skills pdmg"
         initial="hidden"
         animate="visible"
-        variants={variants}
+        variants={anime}
       >
         <h2 className="skills__heading">Skills</h2>
         <div className="skills__flex-container">

@@ -5,6 +5,7 @@ import GoBack from "../components/GoBack";
 import Seo from "../components/Seo";
 import { Link } from "gatsby";
 import { motion } from "framer-motion";
+import { anime } from "../components/Animations";
 
 const about_me = () => {
   return (
@@ -14,7 +15,12 @@ const about_me = () => {
         description="About me (haitham khadra, the owner of this website). In this page I introduce myself to the visitors of my website."
       />
       <GoBack />
-      <motion.section className="about pdmg">
+      <motion.section
+        className="about pdmg"
+        initial="hidden"
+        animate="visible"
+        variants={anime}
+      >
         <article className="about__article">
           <h2 className="about__title">About_Me</h2>
           <p className="about__paragraph">I am a self-taught Programmer</p>

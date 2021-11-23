@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import Seo from "../components/Seo";
 import { graphql, useStaticQuery } from "gatsby";
 import { motion } from "framer-motion";
+import { anime } from "../components/Animations";
 
 const IndexPage = () => {
   const greaterThan = React.createElement("span", {
@@ -33,18 +34,6 @@ const IndexPage = () => {
     },
   ];
 
-  const anim = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "Spring",
-        stiffness: 25,
-        duration: 0.75,
-      },
-    },
-    hidden: { opacity: 0, y: 10 },
-  };
   return (
     <Layout>
       <Seo
@@ -60,7 +49,7 @@ const IndexPage = () => {
         className="hero"
         initial="hidden"
         animate="visible"
-        variants={anim}
+        variants={anime}
       >
         <Coding />
         <div className="hero__text-wrapper">
