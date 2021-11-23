@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 
 const skills_and_services = () => {
-  const variants = {
+  const anim = {
     visible: {
       opacity: 1,
       y: 0,
@@ -28,7 +28,7 @@ const skills_and_services = () => {
         className="services pdmg"
         initial="hidden"
         animate="visible"
-        variants={variants}
+        variants={anim}
       >
         <h2 className="services__heading">Services</h2>
         <div className="services__flex-container">

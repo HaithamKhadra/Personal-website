@@ -10,8 +10,21 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const contact_me = () => {
+  const anim = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "Spring",
+        stiffness: 25,
+        duration: 0.75,
+      },
+    },
+    hidden: { opacity: 0, y: 10 },
+  };
   return (
     <Layout>
       <Seo

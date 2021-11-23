@@ -4,6 +4,7 @@ import Coding from "../svg/Coding";
 import { Link } from "gatsby";
 import Seo from "../components/Seo";
 import { graphql, useStaticQuery } from "gatsby";
+import { motion } from "framer-motion";
 
 const IndexPage = () => {
   const greaterThan = React.createElement("span", {
@@ -31,6 +32,19 @@ const IndexPage = () => {
       url: "https://haitham-khadra.netlify.app/",
     },
   ];
+
+  const anim = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "Spring",
+        stiffness: 25,
+        duration: 0.75,
+      },
+    },
+    hidden: { opacity: 0, y: 10 },
+  };
   return (
     <Layout>
       <Seo
@@ -42,7 +56,12 @@ const IndexPage = () => {
         React, Gatsby, SQL, Python, Django and Git."
         schemaMarkup={schema}
       />
-      <section className="hero">
+      <motion.section
+        className="hero"
+        initial="hidden"
+        animate="visible"
+        variants={anim}
+      >
         <Coding />
         <div className="hero__text-wrapper">
           <h1 className="hero__text">{greaterThan} Hello, world!</h1>
@@ -65,7 +84,7 @@ const IndexPage = () => {
             </a>
           </div>
         </div>
-      </section>
+      </motion.section>
     </Layout>
   );
 };
