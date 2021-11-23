@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import Coding from "../svg/Coding";
 import { Link } from "gatsby";
 import Seo from "../components/Seo";
-import { graphql, useStaticQuery } from "gatsby";
 import { motion } from "framer-motion";
 import { anime } from "../components/Animations";
 
@@ -11,18 +10,6 @@ const IndexPage = () => {
   const greaterThan = React.createElement("span", {
     dangerouslySetInnerHTML: { __html: "&gt;" },
   });
-
-  const data = useStaticQuery(graphql`
-    {
-      allFile(filter: { extension: { eq: "pdf" } }) {
-        edges {
-          node {
-            publicURL
-          }
-        }
-      }
-    }
-  `);
 
   const schema = [
     {
@@ -63,14 +50,6 @@ const IndexPage = () => {
             <Link className="hero__link" to="/contact">
               hire me
             </Link>
-            <a
-              className="hero__link"
-              rel="noreferrer"
-              href={data.allFile.edges[0].node.publicURL}
-              target="_blank"
-            >
-              resume
-            </a>
           </div>
         </div>
       </motion.section>
