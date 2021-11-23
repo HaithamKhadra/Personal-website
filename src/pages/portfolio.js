@@ -19,7 +19,16 @@ const portfolio = ({ data }) => {
         description="my portfolio page to showcase the projects that I finished and those that I am still working on"
       />
       <GoBack />
-      <section className="projects pdmg">
+      <motion.section
+        className="projects pdmg"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "Spring",
+          stiffness: 25,
+          duration: 0.75,
+        }}
+      >
         <h2 className="projects__heading">My Portfolio</h2>
         <div className="projects__container">
           {projects.map((project, key) => {
@@ -32,7 +41,7 @@ const portfolio = ({ data }) => {
                 transition={{
                   type: "Spring",
                   stiffness: 25,
-                  duration: 0.5,
+                  duration: 0.75,
                   delay: key * 0.5,
                 }}
               >
@@ -84,7 +93,7 @@ const portfolio = ({ data }) => {
             );
           })}
         </div>
-      </section>
+      </motion.section>
     </Layout>
   );
 };
