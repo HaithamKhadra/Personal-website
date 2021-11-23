@@ -2,8 +2,21 @@ import React from "react";
 import Layout from "../components/Layout";
 import GoBack from "../components/GoBack";
 import Seo from "../components/Seo";
+import { motion } from "framer-motion";
 
 const skills_and_services = () => {
+  const variants = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "Spring",
+        stiffness: 25,
+        duration: 0.75,
+      },
+    },
+    hidden: { opacity: 0, y: 10 },
+  };
   return (
     <Layout>
       <Seo
@@ -11,7 +24,12 @@ const skills_and_services = () => {
         description="Services and skills that I can offer, at the time of viewing this page."
       />
       <GoBack />
-      <section className="services pdmg">
+      <motion.section
+        className="services pdmg"
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+      >
         <h2 className="services__heading">Services</h2>
         <div className="services__flex-container">
           <article className="services__cat">
@@ -31,8 +49,13 @@ const skills_and_services = () => {
             </p>
           </article>
         </div>
-      </section>
-      <section className="skills pdmg">
+      </motion.section>
+      <motion.section
+        className="skills pdmg"
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+      >
         <h2 className="skills__heading">Skills</h2>
         <div className="skills__flex-container">
           <div className="skills__cat">
@@ -66,7 +89,7 @@ const skills_and_services = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </motion.section>
     </Layout>
   );
 };

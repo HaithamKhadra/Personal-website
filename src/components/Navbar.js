@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const ampersand = React.createElement("span", {
@@ -7,7 +8,15 @@ const Navbar = () => {
   });
 
   return (
-    <header>
+    <motion.header
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "Spring",
+        stiffness: 25,
+        duration: 0.75,
+      }}
+    >
       <nav className="navbar">
         <ul className="navbar__list">
           <li className="navbar__list-items">
@@ -32,7 +41,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

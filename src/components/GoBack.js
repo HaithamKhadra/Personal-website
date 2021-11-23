@@ -6,7 +6,16 @@ import { motion, AnimateSharedLayout } from "framer-motion";
 
 const GoBack = () => {
   return (
-    <h1 className="go-back">
+    <motion.h1
+      className="go-back"
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "Spring",
+        stiffness: 25,
+        duration: 1,
+      }}
+    >
       <Link className="go-back__link" to="/">
         <AnimateSharedLayout>
           <motion.span
@@ -25,7 +34,7 @@ const GoBack = () => {
         </AnimateSharedLayout>
         <span className="go-back__text">Home_Page</span>
       </Link>
-    </h1>
+    </motion.h1>
   );
 };
 
