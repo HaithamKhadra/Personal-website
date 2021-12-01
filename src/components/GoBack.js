@@ -25,8 +25,9 @@ const GoBack = () => {
             animate={{ left: 0 }}
             transition={{
               delay: 0.5,
-              duration: 0.5,
-              yoyo: Infinity,
+              duration: 0.75,
+              repeat: Infinity,
+              repeatType: "reverse",
             }}
           >
             <FontAwesomeIcon icon={faArrowLeft} />

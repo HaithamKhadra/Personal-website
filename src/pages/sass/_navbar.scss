@@ -29,6 +29,10 @@
     color: $white;
   }
 
+  &__links--active {
+    color: $neonGreen;
+  }
+
   @include media-breakpoint-up(xs) {
     &__list-items {
       font-size: $font-s1;
