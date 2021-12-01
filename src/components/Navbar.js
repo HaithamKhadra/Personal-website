@@ -9,7 +9,7 @@ const Navbar = () => {
   });
 
   const location = useLocation();
-  const url = location.href;
+  const url = location.href || "/";
 
   return (
     <motion.header
