@@ -97,7 +97,7 @@ const portfolio = ({ data }) => {
 
 export const query = graphql`
   {
-    allContentfulProject {
+    allContentfulProject(sort: { fields: updatedAt, order: DESC }) {
       nodes {
         id
         title
