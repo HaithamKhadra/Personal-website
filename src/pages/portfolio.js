@@ -43,7 +43,7 @@ const portfolio = ({ data }) => {
                 }}
               >
                 <div className="projects__img-wrapper">
-                  <img src={project.image.file.url} alt="screenshot " />
+                  <img src={project.image.fluid.src} alt="screenshot " />
                 </div>
                 <div className="projects__details">
                   <h3 className="projects__project-title">{project.title}</h3>
@@ -108,8 +108,8 @@ export const query = graphql`
         ghLink
         liveUrl
         image {
-          file {
-            url
+          fluid(toFormat: WEBP) {
+            src
           }
         }
       }
