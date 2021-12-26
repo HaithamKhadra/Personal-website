@@ -36,13 +36,13 @@
   }
 
   &__link {
-    padding: 0.125rem 1rem;
+    padding: 0.125em 1em;
     background-color: transparent;
     color: $neonGreen;
     font-size: $font-s1;
     letter-spacing: 3px;
     font-weight: 600;
-    outline: 2px solid $neonGreen;
+    border: 2px solid $neonGreen;
     transition: all 400ms ease;
     cursor: pointer;
 
@@ -53,7 +53,7 @@
     }
 
     &:first-child {
-      margin-right: 1.5rem;
+      margin-left: 0;
     }
   }
 
@@ -139,7 +139,6 @@
     }
 
     &__link {
-      padding: 0.25rem 2rem;
       font-size: $font-md;
     }
   }
@@ -183,10 +182,6 @@
     &__link {
       margin-top: 4rem;
       margin-left: 0;
-
-      &:first-child {
-        margin-right: 3rem;
-      }
     }
   }
 
@@ -222,6 +217,10 @@
     &__text {
       font-size: $font-lg;
     }
+
+    &__link {
+      font-size: $font-md + 0.5rem;
+    }
   }
 
   @include media-breakpoint-up(macPro13) {
@@ -243,10 +242,7 @@
     }
 
     &__link {
-      font-size: $font-lg - 0.5rem;
-      &:first-child {
-        margin-right: 5rem;
-      }
+      font-size: $font-xl - 0.6rem;
     }
   }
 
@@ -263,7 +259,7 @@
     }
 
     &__link {
-      padding: 0.375rem 4rem;
+      padding: 0.375em 4em;
       font-size: $font-xl;
     }
   }
